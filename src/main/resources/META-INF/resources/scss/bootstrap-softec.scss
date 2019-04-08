@@ -1,0 +1,239 @@
+// override bootstrap sass variables specified here:
+// http://getbootstrap.com/customize/#less-variables
+@import "variables_softec";
+
+// current stable bootstrap version
+@import "../webjars/bootstrap/4.1.3/scss/bootstrap";
+
+a {
+    color: $softec-blue;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#headerLine {
+    border-bottom: 1px solid #C6C6C6;
+    height: 35px;
+}
+
+#orgaunitTitle {
+    margin-top: -.35rem;
+}
+
+#orgaunitTitle h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#orgaunitTitle h2 {
+    color: #666666;
+    font-size: 1.15rem;
+    margin-bottom: 0;
+    margin-top: .1rem;
+}
+
+#orgaunitLogo img, #orgaunitLogo svg {
+    float: right;
+    height: auto;
+    width: auto;
+    max-height: 90px;
+    max-width: 228px;
+}
+
+#navigationMainContainer {
+    background: $softec-blue;
+    min-height: 30px;
+}
+
+#navbarSupportedContent > ul > li > a, #navbarSupportedContent > ul > li > a:link, #navbarSupportedContent > ul > li > a:visited, #navbarSupportedContent > ul > li > a:active, #navbarSupportedContent > ul > li > a:hover {
+    color: #f2f5f8;
+}
+
+#navbarSupportedContent > ul > li > a {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+#navbarSupportedContent > ul > li > a:hover {
+    background: $softec-blue-hover;
+}
+
+#topcontainer {
+    background-color: #437bb6;
+}
+
+#topcontainer h3 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.card {
+    border-radius: 0 !important;
+}
+
+.breadcrumb {
+    border-radius: 0 !important;
+    background-color: white;
+}
+
+footer {
+    color: white;
+    background-color: $softec-blue;
+}
+
+footer h2 {
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+.card ul, footer ul {
+    margin-left: 0;
+    padding-left: 1.5em;
+    list-style-type: square;
+}
+
+.card ul li, footer ul li {
+    margin-bottom: .5em;
+}
+
+footer a:link, footer a:visited {
+    color: white;
+}
+
+.imprintlinewrapper {
+    background-color: #151B20 !important;
+}
+
+#footerLogo img {
+    width: 228px;
+    height: auto;
+}
+
+#navigationFooter, #footerCopyright {
+    padding: 0;
+    margin: 0 0 15px;
+}
+
+#navigationFooter ul, #footerCopyright ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+#navigationFooter li, #footerCopyright li {
+    padding-right: 1em;
+}
+
+#navigationFooter > ul > li a i {
+    margin-right: .5em;
+    text-align: right;
+    width: auto;
+}
+
+footer .imprintlinewrapper {
+    font-size: 1.1rem;
+}
+
+.bodywrapper {
+    background-color: #EAEAEA;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.card-body h3 {
+    color: $softec-blue;
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+.btn.btn-primary{
+    color: #fff;
+    font-size: 0.85rem;
+    background-color: $softec-blue;
+    border-color: $softec-blue;
+    border-radius: 0;
+}
+
+.btn.btn-primary:hover{
+    color: #fff;
+    font-size: 0.85rem;
+    background-color: $softec-blue-hover;
+    border-radius: 0;
+}
+
+.btn.btn-danger {
+    color: #fff;
+    font-size: 0.85rem;
+    border-radius: 0;
+}
+
+.btn.btn-secondary {
+    color: #fff;
+    font-size: 0.85rem;
+    border-radius: 0;
+}
+
+.badge-primary[href] {
+    color: #fff;
+    background-color: $softec-blue;
+    border-color: $softec-blue;
+}
+
+.badge-primary[href]:hover {
+    color: #fff;
+    background-color: $softec-blue-hover;
+}
+
+.form-control-sm, .mycore-form-input, .form-control {
+    border-radius: 0;
+}
+
+.btn-outline-primary {
+    border-radius: 0;
+    background-color: white;
+    border-color: $softec-blue;
+    color: $softec-blue;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: $softec-blue;
+    border-color: $softec-blue;
+}
+
+.xeditor-pmud {
+    color: $softec-blue;
+    font-size:25px;
+}
+
+.xeditor-pmud:hover {
+    color: $softec-blue-hover;
+    font-size: 25px;
+}
+
+.card-body > .list-group {
+    padding-left: 0;
+}
+
+.btn-link {
+    color: $softec-blue;
+}
+
+.mycore-slidetoggle {
+    color: $softec-blue !important;
+}
