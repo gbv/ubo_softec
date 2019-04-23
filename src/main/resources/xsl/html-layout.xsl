@@ -131,10 +131,7 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav" id="mainnav">
-              <!-- Find the item that is the root of the navigation tree to display -->
-              <xsl:for-each select="$navigation.tree">
-                <xsl:apply-templates select="item[@label|label]" mode="navigation" />
-              </xsl:for-each>
+              <xsl:call-template name="layout.mainnav" />
             </ul>
           </div>
         </nav>
@@ -177,36 +174,7 @@
                 </div>
               </li>
               <li id="navigationStakeholder">
-                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="far fa-fw fa-user"></i>
-                  <span class="icon-label">Informationen der UDE für...</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="https://www.uni-due.de/de/interessierte.php">Studieninteressierte</a>
-                  </li>
-                  <li>
-                    <a href="https://www.uni-due.de/de/studierende.php">Studierende</a>
-                  </li>
-                  <li>
-                    <a href="https://www.uni-due.de/de/promovierende.php">Promovierende</a>
-                  </li>
-                  <li>
-                    <a href="https://www.uni-due.de/de/alumni/">Alumni</a>
-                  </li>
-                  <li>
-                    <a href="https://www.uni-due.de/verwaltung/beschaeftigte.php">Beschäftige</a>
-                  </li>
-                  <li>
-                    <a href="https://www.uni-due.de/de/wirtschaft/">Wirtschaft</a>
-                  </li>
-                  <li>
-                    <a href="https://www.uni-due.de/de/presse/index.php">Presse</a>
-                  </li>
-                  <li>
-                    <a href="https://www.uni-due.de/international/">International</a>
-                  </li>
-                </ul>
+                <xsl:call-template name="layout.sub.navigation.information"/>
               </li>
             </ul>
           </nav>
@@ -248,6 +216,24 @@
         </div>
       </div>
     </div>
+  </xsl:template>
+
+  <!-- custom navigation for additional information -->
+
+  <xsl:template name="layout.sub.navigation.information">
+    <xsl:for-each select="$navigation.tree/item[@menu='information']">
+      <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="far fa-fw fa-user"></i>
+        <span class="icon-label"><xsl:call-template name="output.label.for.lang"/></span>
+      </a>
+    </xsl:for-each>
+    <ul class="dropdown-menu">
+      <xsl:for-each select="$navigation.tree/item[@menu='information']/item">
+        <li>
+          <xsl:call-template name="output.item.label"/>
+        </li>
+      </xsl:for-each>
+    </ul>
   </xsl:template>
 
   <xsl:template name="layout.header">
