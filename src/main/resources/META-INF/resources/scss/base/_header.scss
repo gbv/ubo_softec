@@ -1,0 +1,32 @@
+
+#headerLine {
+    border-bottom: 1px solid #C6C6C6;
+    height: 35px;
+}
+
+#orgaunitTitle {
+    margin-top: -.35rem;
+}
+
+#orgaunitTitle h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#orgaunitTitle h2 {
+    color: #666666;
+    font-size: 1.15rem;
+    margin-bottom: 0;
+    margin-top: .1rem;
+}
+
+#orgaunitLogo img, #orgaunitLogo svg {
+    float: right;
+    height: auto;
+    width: auto;
+    max-height: 90px;
+    max-width: 228px;
+}

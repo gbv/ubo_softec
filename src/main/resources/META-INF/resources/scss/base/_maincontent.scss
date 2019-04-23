@@ -1,0 +1,82 @@
+
+.bodywrapper {
+    background-color: #EAEAEA;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.btn.btn-primary{
+    color: #fff;
+    font-size: 0.85rem;
+    background-color: $softec-blue;
+    border-color: $softec-blue;
+    border-radius: 0;
+}
+
+.btn.btn-primary:hover{
+    color: #fff;
+    font-size: 0.85rem;
+    background-color: $softec-blue-hover;
+    border-radius: 0;
+}
+
+.btn.btn-danger {
+    color: #fff;
+    font-size: 0.85rem;
+    border-radius: 0;
+}
+
+.btn.btn-secondary {
+    color: #fff;
+    font-size: 0.85rem;
+    border-radius: 0;
+}
+
+.badge-primary[href] {
+    color: #fff;
+    background-color: $softec-blue;
+    border-color: $softec-blue;
+}
+
+.badge-primary[href]:hover {
+    color: #fff;
+    background-color: $softec-blue-hover;
+}
+
+.form-control-sm, .mycore-form-input, .form-control {
+    border-radius: 0;
+}
+
+.btn-outline-primary {
+    border-radius: 0;
+    background-color: white;
+    border-color: $softec-blue;
+    color: $softec-blue;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: $softec-blue;
+    border-color: $softec-blue;
+}
+
+.xeditor-pmud {
+    color: $softec-blue;
+    font-size:25px;
+}
+
+.xeditor-pmud:hover {
+    color: $softec-blue-hover;
+    font-size: 25px;
+}
+
+.card-body > .list-group {
+    padding-left: 0;
+}
+
+.mycore-slidetoggle {
+    color: $softec-blue !important;
+}

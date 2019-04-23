@@ -1,0 +1,24 @@
+
+#navigationMainContainer {
+    background: $softec-blue;
+}
+
+#navbarSupportedContent > ul > li > a, #navbarSupportedContent > ul > li > a:link, #navbarSupportedContent > ul > li > a:visited, #navbarSupportedContent > ul > li > a:active, #navbarSupportedContent > ul > li > a:hover {
+    color: #f2f5f8;
+}
+
+#navbarSupportedContent > ul > li > a {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+#navbarSupportedContent > ul > li > a:hover {
+    background: $softec-blue-hover;
+}
+
+.nav-item.active {
+    background-color: black;
+}

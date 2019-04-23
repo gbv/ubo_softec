@@ -22,7 +22,6 @@
   <xsl:include href="coreFunctions.xsl" />
   <xsl:include href="html-layout-backend.xsl" />
 
-
   <!-- ==================== HTML ==================== -->
   
   <xsl:template match="/html">
