@@ -63,6 +63,10 @@ a {
     background: $softec-blue-hover;
 }
 
+.nav-item.active {
+    background-color: black;
+}
+
 #topcontainer {
     background-color: #437bb6;
 }
